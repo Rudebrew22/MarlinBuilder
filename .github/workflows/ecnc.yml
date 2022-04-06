@@ -14,7 +14,8 @@ on:
     - src/configs/V1*Archim*
     - src/configs/V1*Rambo*
     - src/configs/V1*Ramps*
-    - src/configs/V1*Skr1p3*
+    - src/configs/V1*Skr*
+    - src/configs/V1*Mini
     - '**/*.md'
   release:
     types:
