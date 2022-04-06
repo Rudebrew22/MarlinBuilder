@@ -87,8 +87,8 @@ jobs:
           Marlin_*.zip
 
     - name: Build
-      run: #|
-        #src/core/build-for-machine
+      run: |
+        src/core/build-for-machine
 
     - name: Zip up release
       run: |
