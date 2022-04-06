@@ -16,9 +16,9 @@ opt_enable \
 opt_disable \
 EVENT_GCODE_SD_ABORT
 
-cp $CFGDIR/common/_Bootscreen.h Marlin/
+#cp $CFGDIR/common/_Bootscreen.h Marlin/
 #opt_enable SHOW_CUSTOM_BOOTSCREEN #You have enabled SHOW_CUSTOM_BOOTSCREEN and CUSTOM_STATUS_SCREEN_IMAGE but you have not copied over or created the the required _Bootscreen.h and _Statusscreen.h
-opt_disable SHOW_CUSTOM_BOOTSCREEN
+#opt_disable SHOW_CUSTOM_BOOTSCREEN
 
 # Start by putting the machine config and the marlin version in the readme
 echo "# ${CONFIG_NAME} - ${MARLIN_VERSION} - ${V1_VERSION}" > README.md
