@@ -86,6 +86,10 @@ jobs:
         path: |
           Marlin_*.zip
 
+    - name: Build
+      run: #|
+        #src/core/build-for-machine
+
     - name: Zip up release
       run: |
         src/core/zip-release
