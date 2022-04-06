@@ -14,4 +14,4 @@ $CFGDIR/accessories/tmc2208
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/no-dual-endstops
 
-export PLATFORMIO_ENV=LPC1768
+export PLATFORMIO_ENV=LPC1768 #confirm if this is right...
