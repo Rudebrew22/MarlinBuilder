@@ -1,6 +1,7 @@
 opt_set MOTHERBOARD BOARD_CREALITY_V4
 #opt_set CUSTOM_MACHINE_NAME "ECNC"
 
+opt_enable FAN_SOFT_PWM
 
 #/**
 # * Select the serial port on the board to use for communication with the host.
@@ -12,6 +13,9 @@ opt_set MOTHERBOARD BOARD_CREALITY_V4
 # */
 
 opt_set SERIAL_PORT 1
+
+
+
 
 #. $CFGDIR/accessories/use-32-microsteps
 
