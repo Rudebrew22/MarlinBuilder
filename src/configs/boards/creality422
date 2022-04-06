@@ -3,7 +3,7 @@ opt_set MOTHERBOARD BOARD_CREALITY_V4
 
 opt_enable FAN_SOFT_PWM
 
-
+opt_enable U8G_PARAM LCD_PINS_D4, LCD_PINS_ENABLE, LCD_PINS_RS
 #opt_enable LCD_PINS_ENABLE
 #opt_enable DMA_PINC_ENABLE
 #opt_enable LCD_PINS_D4
