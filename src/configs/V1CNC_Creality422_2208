@@ -14,4 +14,5 @@ $CFGDIR/accessories/tmc2208
 $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/no-dual-endstops
 
-export PLATFORMIO_ENV=STM32F103RET6_creality #This is the older branch build... Use "STM32F103RE_creality" for the bugfix 2.0.x branches
+#export PLATFORMIO_ENV=STM32F103RET6_creality #This is the older branch build
+export PLATFORMIO_ENV=STM32F103RE_creality #this is for the bugfix 2.0.x branches
