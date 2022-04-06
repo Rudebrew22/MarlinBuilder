@@ -35,10 +35,12 @@ jobs:
     strategy:
       fail-fast: false # Allow all machines to finish building
       matrix:
-        branch: ${{ fromJson(
-          github.event_name == 'schedule' && '["bugfix-2.0.x"]' ||
-          github.event_name == 'pull_request' && '["bugfix-2.0.x", "2.0.9.2"]' ||
-          '["2.0.9.2"]') }}
+        #branch: ${{ fromJson(
+        #  github.event_name == 'schedule' && '["bugfix-2.0.x"]' ||
+        #  github.event_name == 'pull_request' && '["bugfix-2.0.x", "2.0.9.2"]' ||
+        #  '["2.0.9.2"]') }}
+        branch: #added this
+        - bugfix-2.0.x #added this
         machine:
         - V1CNC_Creality422_2208
 
