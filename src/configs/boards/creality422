@@ -2,7 +2,7 @@ opt_set MOTHERBOARD BOARD_CREALITY_V4
 #opt_set CUSTOM_MACHINE_NAME "ECNC"
 
 opt_enable FAN_SOFT_PWM
-
+opt_enable LCD_PINS_ENABLE
 #/**
 # * Select the serial port on the board to use for communication with the host.
 # * This allows the connection of wireless adapters (for instance) to non-default port pins.
