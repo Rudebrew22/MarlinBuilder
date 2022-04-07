@@ -1,4 +1,4 @@
-name: ramps
+name: Ender422
 
 on:
   schedule:
@@ -74,6 +74,7 @@ jobs:
       run: |
         cp src/Defaults/Configuration.h Marlin/Marlin/Configuration.h
         cp src/Defaults/Configuration_adv.h Marlin/Marlin/Configuration_adv.h
+    
     - name: Configure
       run: |
         src/core/config-for-machine ${{ matrix.machine }}
