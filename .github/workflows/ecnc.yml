@@ -1,3 +1,30 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Rudebrew22 
+Rudebrew22
+/
+MarlinBuilder
+Public
+forked from V1EngineeringInc/MarlinBuilder
+Code
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+Rename Creality422 #2
+Summary
+Workflow file
+Jobs
+V1CNC_Creality422_2208-2.0.9.2
+Workflow file for this run
+.github/workflows/test.yml at 891cf55
 name: Creality422
 
 on:
@@ -58,7 +85,6 @@ jobs:
       run: |
         pip install -U https://github.com/platformio/platformio-core/archive/master.zip
         platformio update
-
     - name: Check out MarlinBuilder
       uses: actions/checkout@v2
 
@@ -74,26 +100,18 @@ jobs:
     - name: Configure
       run: |
         src/core/config-for-machine ${{ matrix.machine }}
-
     - name: Zip up Marlin
       run: |
         src/core/zip-marlin
-
     - name: Upload src artifact
       uses: actions/upload-artifact@v2
       with:
         name: ${{ matrix.machine }}-${{ matrix.branch }}
         path: |
           Marlin_*.zip
-
-    - name: Build
-      run: |
-        src/core/build-for-machine
-
     - name: Zip up release
       run: |
         src/core/zip-release
-
     - name: Upload built artifact
       uses: actions/upload-artifact@v2
       with:
@@ -101,7 +119,6 @@ jobs:
         path: |
           firmware*
           Marlin_*.zip
-
     - name: Upload Marlin-${{ matrix.machine }}-${{ matrix.branch }}.zip to release
       if: ${{ github.event_name == 'release' }}
       uses: actions/upload-release-asset@v1
