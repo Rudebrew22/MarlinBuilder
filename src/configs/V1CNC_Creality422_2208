@@ -6,9 +6,9 @@ restore_configs
 
 export V1_VERSION=${V1_VERSION}S
 
-#$CFGDIR/common/v1-base-config
-#$CFGDIR/common/cnc-config
-#$CFGDIR/boards/creality422 #Need to make some tweaks here
+$CFGDIR/common/v1-base-config
+$CFGDIR/common/cnc-config
+$CFGDIR/boards/creality422 #Need to make some tweaks here
 #$CFGDIR/accessories/dummy-extruder #May need to tweak if I am going to use the extruder for an output... tweak pins?
 #$CFGDIR/accessories/tmc2208
 #$CFGDIR/accessories/reprap_discount_full_graphic_lcd
