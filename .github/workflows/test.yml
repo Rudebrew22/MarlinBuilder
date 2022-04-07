@@ -75,8 +75,8 @@ jobs:
 
     - name: Replace configs
       run: |
-        cp Marlin/Configuration.h Marlin/Configuration.h.backup
-        cp Marlin/Configuration_adv.h Marlin/Configuration_adv.h.backup
+        #cp Marlin/Configuration.h Marlin/Configuration.h.backup
+        #cp Marlin/Configuration_adv.h Marlin/Configuration_adv.h.backup
         cp src/Defaults/Configuration.h Marlin/Configuration.h
         cp src/Defaults/Configuration_adv.h Marlin/Configuration_adv.h
         #need to figure out how to pull from other repo - use local file for now
