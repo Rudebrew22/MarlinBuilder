@@ -17,8 +17,8 @@ opt_disable \
 EVENT_GCODE_SD_ABORT
 
 #https://www.reddit.com/r/MarlinFirmware/comments/f1rysl/bootscreens_in_20/
-#cp $CFGDIR/common/_Bootscreen.h Marlin/
-#opt_enable SHOW_CUSTOM_BOOTSCREEN #You have enabled SHOW_CUSTOM_BOOTSCREEN and CUSTOM_STATUS_SCREEN_IMAGE but you have not copied over or created the the required _Bootscreen.h and _Statusscreen.h
+cp $CFGDIR/common/_Bootscreen.h Marlin/
+opt_enable SHOW_CUSTOM_BOOTSCREEN #You have enabled SHOW_CUSTOM_BOOTSCREEN and CUSTOM_STATUS_SCREEN_IMAGE but you have not copied over or created the the required _Bootscreen.h and _Statusscreen.h
 #opt_disable SHOW_CUSTOM_BOOTSCREEN
 
 # Start by putting the machine config and the marlin version in the readme
