@@ -4,6 +4,9 @@ opt_set DUMMY_THERMISTOR_999_VALUE 170
 opt_set X_MIN_ENDSTOP_INVERTING "false"
 opt_set Y_MIN_ENDSTOP_INVERTING "false"
 
+opt_enable \
+    X_DUAL_STEPPER_DRIVERS
+
 opt_disable \
     MIN_SOFTWARE_ENDSTOPS \
     SOFT_ENDSTOPS_MENU_ITEM \
